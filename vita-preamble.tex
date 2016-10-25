@@ -1,0 +1,32 @@
+\documentclass[12pt,letterpaper,sans]{moderncv}
+
+\moderncvstyle{classic}
+\moderncvcolor{blue}
+
+\ifcharta
+\usepackage{geometry}
+\else
+\usepackage[scale=0.825]{geometry}
+\fi
+
+\setlength{\hintscolumnwidth}{3.5cm}
+%% \setlength{\makecvheadnamewidth}{10cm}
+
+\renewcommand{\familydefault}{\sfdefault}
+
+\usepackage{polyglossia}
+
+\ifenglish
+\setmainlanguage[variant=usmax]{english}
+\setotherlanguage{spanish}
+\fi
+
+\ifspanish
+\setmainlanguage{spanish}
+\setotherlanguage[variant=usmax]{english}
+\fi
+
+\newcommand{\enes}[2]{
+  \ifenglish{#1}\fi
+  \ifspanish{#2}\fi
+}

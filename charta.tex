@@ -1,0 +1,60 @@
+\newif\ifcharta
+\chartatrue
+
+\input{vita-preamble.tex}
+\input{vita-title.tex}
+
+\begin{document}
+
+\recipient{Company recruitment team}{Company}
+\date{\today}
+\opening{\enes{Hello,}{Hola:}}
+\closing{\enes{Sincerely,}{Atentamente,}}
+
+\makelettertitle
+
+\ifenglish
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed rhoncus
+sem sit amet nulla hendrerit posuere sed a sem. Sed fringilla
+vulputate quam vel cursus. Pellentesque habitant morbi tristique
+senectus et netus et malesuada fames ac turpis egestas. Duis ornare
+neque non turpis eleifend interdum. Nunc dui ex, accumsan et ipsum
+nec, sollicitudin gravida mi. Curabitur enim nisl, lobortis ac magna
+in, cursus porta nisl. Duis efficitur leo nec enim lobortis, at
+euismod est ullamcorper. Sed vitae placerat nibh, a iaculis magna.
+
+Aenean id nisl tortor. Vivamus sollicitudin sagittis elit ac vehicula.
+Aenean orci nulla, aliquam consectetur elementum et, rhoncus tristique
+leo. Maecenas at sem vel nisi malesuada interdum sit amet at nisl. In
+consectetur libero ut consectetur volutpat. Fusce porttitor sodales
+neque ut pulvinar. Phasellus at tortor non nunc hendrerit porta.
+Pellentesque habitant morbi tristique senectus et netus et malesuada
+fames ac turpis egestas.
+
+\fi
+
+\ifspanish
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed rhoncus
+sem sit amet nulla hendrerit posuere sed a sem. Sed fringilla
+vulputate quam vel cursus. Pellentesque habitant morbi tristique
+senectus et netus et malesuada fames ac turpis egestas. Duis ornare
+neque non turpis eleifend interdum. Nunc dui ex, accumsan et ipsum
+nec, sollicitudin gravida mi. Curabitur enim nisl, lobortis ac magna
+in, cursus porta nisl. Duis efficitur leo nec enim lobortis, at
+euismod est ullamcorper. Sed vitae placerat nibh, a iaculis magna.
+
+Aenean id nisl tortor. Vivamus sollicitudin sagittis elit ac vehicula.
+Aenean orci nulla, aliquam consectetur elementum et, rhoncus tristique
+leo. Maecenas at sem vel nisi malesuada interdum sit amet at nisl. In
+consectetur libero ut consectetur volutpat. Fusce porttitor sodales
+neque ut pulvinar. Phasellus at tortor non nunc hendrerit porta.
+Pellentesque habitant morbi tristique senectus et netus et malesuada
+fames ac turpis egestas.
+
+\fi
+
+\makeletterclosing
+
+\end{document}
