@@ -1,0 +1,62 @@
+---
+
+---
+
+<!doctype html>
+
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+
+    <meta name="author" content="Juan Pedro Villa Isaza">
+
+    <meta name="google-site-verification" content="2lWZE-Siy3l6b6ZB3QfN_MlTmZ58TuO0fEMj7IIjNRU" />
+
+    <title>{{ site.title }}</title>
+
+    {% include default-links.html %}
+
+  </head>
+
+  <body>
+
+    <div class="container">
+
+      <header class="header">
+	<h1 class="header-brand">
+	  <a href="/">
+	    {{ site.title }}
+	  </a>
+	</h1>
+      </header>
+
+      <div class="content">
+	{{ content }}
+      </div>
+
+      <footer class="footer">
+	<address>
+	  <a href="{{ site.data.social.facebook }}" aria-label="Facebook">
+	    <i class="fa fa-facebook-official fa-2x fa-fw" aria-hidden="true"></i>
+	  </a>
+	  <a href="{{ site.data.social.github }}" aria-label="GitHub">
+	    <i class="fa fa-github fa-2x fa-fw" aria-hidden="true"></i>
+	  </a>
+	  <a href="{{ site.data.social.instagram }}" aria-label="Instagram">
+	    <i class="fa fa-instagram fa-2x fa-fw" aria-hidden="true"></i>
+	  </a>
+	  <a href="{{ site.data.social.twitter }}" aria-label="Twitter">
+	    <i class="fa fa-twitter fa-2x fa-fw" aria-hidden="true"></i>
+	  </a>
+	</address>
+      </footer>
+
+      {% include default-scripts.html %}
+
+    </div>
+
+  </body>
+
+</html>
